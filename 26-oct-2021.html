@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .img{
+            width: 210px;
+            height: 210px;
+            background-color:red;
+            
+        }
+        .img-responsive{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <noscript>This browser does not support Javascript.</noscript>
+    
+    <div class="img">
+        <img class ="img-responsive" src="https://th.bing.com/th/id/R.af4bfb6d6f32d2ddef700cdd3ac24403?rik=mW6EFHhDgNiwRA&riu=http%3a%2f%2fwallpapersdsc.net%2fwp-content%2fuploads%2f2016%2f10%2fSwan-Images.jpg&ehk=OZhr0AascZHGskbZIdAw9MqhtKoDSkXthG2N9XMnfAc%3d&risl=&pid=ImgRaw&r=0" alt="" srcset="">
+    </div>
+    
+    
+    <input type="text" name="textName" id="textId"value="20">
+    <input type="text" name="text2" id="text2"value="40">
+
+    <input type="password">
+    <input type="email">
+   <script>
+       var text1 = document.getElementById("textId").value;
+       var text2 = document.getElementById("text2").value;
+
+       console.log("==================");
+       console.log(text1);
+       document.getElementById("textId").value = 100;
+       text1 = document.getElementById("textId").value;
+       console.log(text1);
+       text1 = parseInt(text1);
+       text2 = parseInt(text2);
+       var sum = text1+text2;
+       console.log("==================");
+       console.log(sum);
+       
+   </script>
+</body>
+</html>
